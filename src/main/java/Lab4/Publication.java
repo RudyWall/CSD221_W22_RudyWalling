@@ -13,7 +13,7 @@ package Lab4;
  *
  * @author rudyw
  */
-public class Publication extends Book implements SaleableItem{
+public class Publication{
 
     private String title;
     private int copies;

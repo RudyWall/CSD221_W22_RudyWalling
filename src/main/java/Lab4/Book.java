@@ -4,13 +4,12 @@
  * and open the template in the editor.
  */
 package Lab4;
-import java.util.Objects;
 
 /**
  *
  * @author rudyw
  */
-public class Book {
+public class Book extends Publication{
     private String author;
     public Book(){
             author="to be input";

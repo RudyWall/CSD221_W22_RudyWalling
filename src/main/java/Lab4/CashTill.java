@@ -9,7 +9,7 @@ package Lab4;
  *
  * @author rudyw
  */
-public class CashTill {
+public class CashTill{
     private double runningTotal;
     CashTill(){
         runningTotal = 0;
