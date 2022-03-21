@@ -12,7 +12,7 @@ package Lab3;
  *
  * @author rudyw
  */
-public class DiscMag{
+public class DiscMag extends Magazine{
 
     private String title;
     private int copies;

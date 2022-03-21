@@ -9,7 +9,7 @@ package Lab3;
  *
  * @author rudyw
  */
-public class Magazine{
+public class Magazine extends Publication{
     private String title;
     private int orderQty;
     private double price;

@@ -12,7 +12,7 @@ package Lab3;
  *
  * @author rudyw
  */
-public class Publication extends Book{
+public class Publication{
 
     private String title;
     private int copies;
