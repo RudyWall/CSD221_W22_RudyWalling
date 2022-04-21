@@ -3,22 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lab4;
+package Lab5.entitiesOLD;
+
+import java.io.Serializable;
+
 
 /**
  *
  * @author rudyw
  */
-public class Book extends Publication{
+public class Book extends Publication implements Serializable{
     private String author;
-    public Book(){
-            author="to be input";
-}
-    public Book(String m){
-        author=m;
+
+    public String getAuthor() {
+        return author;
     }
-    @Override
-    public String toString(){
-        return "Author: "+author;
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 }

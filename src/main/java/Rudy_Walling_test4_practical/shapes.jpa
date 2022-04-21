@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<entity-mappings ptype="MONOLITH" ppkg="Rudy_Walling_test4_practical" epkg="domain" v="5.4.3" rws="_16505698197302" cws="_16505698197302" persistenceUnitName="DEFAULT_PU" sm="false" xs="false" id="_16505698197301" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <entity compositePrimaryKeyClass="Shape_WallingPK" abs="false" class="Shape_Walling" v="true" jbn="false" xre="false" m="false" rootElement="_16505698197301" id="_16505698298913">
+        <ath>rudyw</ath>
+        <attributes>
+            <basic attribute-type="String" v="true" xvt="" name="area" id="_165057003004414">
+                <xwm/>
+                <xm/>
+            </basic>
+            <id attribute-type="Long" v="true" xvt="" name="id" id="_16505698299214">
+                <xwm/>
+                <xm/>
+                <generated-value strategy="DEFAULT"/>
+            </id>
+        </attributes>
+        <nq e="false" name="Shape_Walling.findAll">
+            <query>Select e from Shape_Walling e</query>
+        </nq>
+        <nq e="false" name="Shape_Walling.findByArea">
+            <query>Select s from Shape_Walling s where s.area=:area</query>
+        </nq>
+    </entity>
+    <entity compositePrimaryKeyClass="Square_WallingPK" abs="false" class="Square_Walling" superclassId="_16505698298913" v="true" jbn="false" xre="false" m="false" rootElement="_16505698197301" id="_16505698338076">
+        <ath>rudyw</ath>
+        <attributes>
+            <basic attribute-type="String" v="true" xvt="" name="theLength" id="_165057003765115">
+                <xwm/>
+                <xm/>
+            </basic>
+            <basic attribute-type="String" v="true" xvt="" name="width" id="_165057004816816">
+                <xwm/>
+                <xm/>
+            </basic>
+        </attributes>
+        <nq e="false" name="Square_Walling.findAll">
+            <query>Select e from Square_Walling e</query>
+        </nq>
+        <nq e="false" name="Square_Walling.findByTheLength">
+            <query>Select s from Square_Walling s where s.theLength=:theLength</query>
+        </nq>
+        <nq e="false" name="Square_Walling.findByWidth">
+            <query>Select s from Square_Walling s where s.width=:width</query>
+        </nq>
+    </entity>
+    <entity compositePrimaryKeyClass="Traingle_WallingPK" abs="false" class="Traingle_Walling" superclassId="_16505698298913" v="true" jbn="false" xre="false" m="false" rootElement="_16505698197301" id="_16505698359089">
+        <ath>rudyw</ath>
+        <attributes>
+            <basic attribute-type="String" v="true" xvt="" name="base" id="_165057006362517">
+                <xwm/>
+                <xm/>
+            </basic>
+            <basic attribute-type="String" v="true" xvt="" name="height" id="_165057006861018">
+                <xwm/>
+                <xm/>
+            </basic>
+        </attributes>
+        <nq e="false" name="Traingle_Walling.findAll">
+            <query>Select e from Traingle_Walling e</query>
+        </nq>
+        <nq e="false" name="Traingle_Walling.findByBase">
+            <query>Select t from Traingle_Walling t where t.base=:base</query>
+        </nq>
+        <nq e="false" name="Traingle_Walling.findByHeight">
+            <query>Select t from Traingle_Walling t where t.height=:height</query>
+        </nq>
+    </entity>
+    <wsl>
+        <ws n="Main" id="_16505698197302">
+            <i ref="_16505698359089" x="547" y="225"/>
+            <i ref="_16505698298913" x="362" y="93"/>
+            <i ref="_16505698338076" x="160" y="225"/>
+        </ws>
+    </wsl>
+</entity-mappings>

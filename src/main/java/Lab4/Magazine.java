@@ -21,7 +21,7 @@ public class Magazine extends Publication{
         price = 0.0;
     }
 
-    Magazine(String n, int i, double p) {
+    public Magazine(String n, int i, double p) {
         title = n;
         orderQty = i;
         price = p;

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<entity-mappings ptype="MONOLITH" ppkg="Lab5" epkg="entities" v="5.4.3" rws="_164865804787729" Pws="_164865804787729" cws="_164865804787729" persistenceUnitName="DEFAULT_PU" sm="false" xs="false" id="_164865804787728" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <beanClass abs="false" class="DiscMag" superclassId="_1648664987539180" v="true" xre="false" m="false" rootElement="_164865804787728" id="_1648664987222153">
+        <attributes/>
+    </beanClass>
+    <beanClass abs="false" class="Magazine" superclassId="_1648664987418169" v="true" xre="false" m="false" rootElement="_164865804787728" id="_1648664987539180">
+        <attributes>
+            <basic attribute-type="int" v="true" am="PRIVATE" name="orderQty" jbt="false" id="_1648664987564182"/>
+        </attributes>
+    </beanClass>
+    <beanClass abs="false" class="Publication" pclass="Publication" v="true" xre="false" m="false" rootElement="_164865804787728" id="_1648664987418169">
+        <removedAttributes>
+            <i>author</i>
+        </removedAttributes>
+        <attributes>
+            <basic attribute-type="java.lang.String" v="true" am="PRIVATE" name="title" jbt="false" id="_1648664987441170"/>
+            <basic attribute-type="int" v="true" am="PRIVATE" name="copies" jbt="false" id="_1648664987447171"/>
+            <basic attribute-type="double" v="true" am="PRIVATE" name="price" jbt="false" id="_1648664987447172"/>
+        </attributes>
+    </beanClass>
+    <beanClass abs="false" class="Book" superclassId="_1648664987418169" v="true" xre="false" m="false" rootElement="_164865804787728" id="_1648664987688200">
+        <attributes>
+            <basic attribute-type="java.lang.String" v="true" name="author" pname="attribute" id="_1648665064258229"/>
+        </attributes>
+    </beanClass>
+    <beanClass abs="false" class="Ticket" v="true" xre="false" m="false" rootElement="_164865804787728" id="_1648664987448174">
+        <attributes>
+            <basic attribute-type="java.lang.String" v="true" am="PRIVATE" name="description" jbt="false" id="_1648664987472175"/>
+            <basic attribute-type="java.lang.String" v="true" am="PRIVATE" name="client" jbt="false" id="_1648664987505176"/>
+            <basic attribute-type="int" v="true" am="PRIVATE" name="copies" jbt="false" id="_1648664987512177"/>
+            <basic attribute-type="double" v="true" am="PRIVATE" name="price" jbt="false" id="_1648664987512178"/>
+            <basic attribute-type="java.lang.String" v="true" am="PRIVATE" name="title" jbt="false" id="_1648664987534179"/>
+        </attributes>
+    </beanClass>
+    <beanClass abs="false" class="CashTill" v="true" xre="false" m="false" rootElement="_164865804787728" id="_1648664987715202">
+        <attributes>
+            <basic attribute-type="double" v="true" am="PRIVATE" name="runningTotal" jbt="false" id="_1648664987715203"/>
+        </attributes>
+    </beanClass>
+    <wsl>
+        <ws n="Main" id="_164865804787729">
+            <i ref="_1648664987688200" x="81" y="272"/>
+            <i ref="_1648664987222153" x="525" y="410"/>
+            <i ref="_1648664987448174" x="238" y="330"/>
+            <i ref="_1648664987715202" x="564" y="87"/>
+            <i ref="_1648664987539180" x="481" y="272"/>
+            <i ref="_1648664987418169" x="267" y="23"/>
+        </ws>
+    </wsl>
+</entity-mappings>
